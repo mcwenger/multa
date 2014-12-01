@@ -1,12 +1,6 @@
 # Multa
-=====
 
 Mutiple Retationships Fieldtype for Statamic
-
-
-# Statamic Section Tabs
-
-Automatically turns your Statamic Section fieldtypes into tabs.
 
 ## Installation
 
