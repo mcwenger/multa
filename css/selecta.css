@@ -1,0 +1,175 @@
+.input-multa .search {
+	display: block;
+	width: 49.25%;
+	margin: 5px 0;
+}
+.input-multa .search input {
+	display: block;
+	border: 1px solid rgba(0,0,0,0.15);
+	box-shadow: inset 0px 1px 2px rgba(0,0,0,0.1);
+	padding: .5em 10px;
+	width: 100%;
+	border-radius: 2px;
+	background: #f4f4f0 url(../assets/search.png) no-repeat 98.5% 8px;
+	-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;
+	-webkit-transition: border .15s ease-in-out; 
+	-moz-transition: border .15s ease-in-out; 
+	-o-transition: border .15s ease-in-out; 
+	-ms-transition: border .15s ease-in-out; 
+	transition: border .15s ease-in-out;
+}
+.input-multa .search input:focus {
+	border: 1px solid #1b9dec;
+}
+
+.input-multa .util .errors {
+	float: right;
+	display: block;
+	padding-top: 12px;
+	width: 49.25%;
+	text-align: right;
+	font-size: 12px;
+	color: #bf1d2d;
+}
+.input-multa .util .errors span {
+	display: none;
+}
+.multa-block {
+	width: 49.25%; 
+	height: 291px; 
+	padding: 2px 6px; 
+	border-radius: 2px; 
+	-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; 
+	background: #f4f4f0; 
+	border: 1px solid rgba(0,0,0,0.15); 
+	box-shadow: inset 0px 1px 2px rgba(0,0,0,0.1); 
+	display: block;
+	overflow-y: auto;
+	-webkit-transition: border .15s ease-in-out; 
+	-moz-transition: border .15s ease-in-out; 
+	-o-transition: border .15s ease-in-out; 
+	-ms-transition: border .15s ease-in-out; 
+	transition: border .15s ease-in-out;
+}
+.input-multa small.above {
+	padding-bottom: 6px;
+}
+.input-multa .rel-options {
+	float: left;
+}
+.input-multa .rel-made {
+	float: right;
+}
+.input-multa .rel-made .handle {
+	float: left; 
+	width: 7px; 
+	height: 8px; 
+	padding: 5px 5px 5px 0px;
+	margin-right: 10px;
+	background: url(../assets/handle.png) no-repeat center center; 
+	cursor: move;
+	opacity: .6;
+}
+.input-multa .rel-made .handle:hover,
+.input-multa .rel-made .ui-sortable-helper.handle {
+	opacity: 1;
+}
+.input-multa > label {
+	clear: both; cursor:
+}
+
+.multa-block label {
+	display: block;
+	text-shadow: 0 1px 0 rgba(255,255,255,.2);
+	border-radius: 3px;
+	background-color: #d9d5d0;
+	-webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.2),inset 0 1px rgba(255,255,255,0.03);
+	box-shadow: 0 1px 0 rgba(0,0,0,0.2),inset 0 1px rgba(255,255,255,0.03);
+	cursor: pointer;
+	margin: 6px 0;
+	padding: 2px 6px;
+	color: #222;
+	border: 1px solid rgba(0,0,0,0.15);
+}
+.multa-block label.ui-state-highlight {
+	background: none; 
+	border: 1px dashed #c3c3c3;
+	-webkit-box-shadow: none; -moz-box-shadow: none; -o-box-shadow: none; -khtml-box-shadow: none; box-shadow: none;
+}
+.multa-block.rel-options label.active {opacity: .3; cursor: default;}
+.multa-block.rel-made label.active {
+	text-shadow: 0 1px 0 rgba(0,51,83,0.3);
+	background-color: #1b9dec;
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#1da7ee), to(#178ee9));
+	background-image: -webkit-linear-gradient(#1da7ee, #178ee9);
+	background-image: -moz-linear-gradient(#1da7ee, #178ee9);
+	background-image: -o-linear-gradient(#1da7ee, #178ee9);
+	background-image: linear-gradient(#1da7ee, #178ee9);
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff1da7ee', endColorstr='#ff178ee9', GradientType=0);
+	color: #ffffff;
+	border: 1px solid #0073bb;
+}
+.input-multa .notes {color: #999;}
+.input-multa .notes.notes-below {margin-top: 8px; font-size: 11px;}
+
+.multa-block label span.date {font-size: 12px; color: #777; position: relative; bottom: 1px; margin-left: 12px;}
+.multa-block.rel-made label span.date {color: #bae4fa;}
+.multa-block label span.folder {float: right; text-transform: uppercase; font-size: 10px; font-weight: 600; color: #777; margin-top: 2px;}
+.multa-block.rel-made label span.folder {color: #bae4fa;}
+
+.flash-field-error {
+	border: 1px solid #bf1d2d;
+}
+
+.group,
+.input-multa {*zoom:1;}
+.group:after,
+.input-multa:after {content: "."; display: block; clear: both; visibility: hidden; overflow: hidden; line-height: 0; height: 0 !important;}
+
+
+/*
+============================================
+    Scrollbars
+============================================
+*/
+
+.multa-block {outline: none;}
+
+.multa-block::-webkit-scrollbar {
+    width: 10px;
+}
+ 
+.multa-block::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+ 
+.multa-block::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: #ccc; 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+}
+.multa-block::-webkit-scrollbar-thumb:window-inactive {
+	
+}
+
+.multa-block::-webkit-scrollbar {}
+.multa-block::-webkit-scrollbar-button {}
+.multa-block::-webkit-scrollbar-track {-webkit-border-radius: 0; border-radius: 0;}
+.multa-block::-webkit-scrollbar-track-piece {}
+.multa-block::-webkit-scrollbar-thumb {}
+.multa-block::-webkit-scrollbar-corner {}
+.multa-block::-webkit-resizer {}
+
+.multa-block {
+	scrollbar-face-color: #666666;
+	scrollbar-shadow-color: #666666;
+	scrollbar-highlight-color:#666666;
+	scrollbar-3dlight-color: #666666;
+	scrollbar-darkshadow-color: #666666;
+	scrollbar-track-color: #666666;
+	scrollbar-arrow-color: #666666;
+}
